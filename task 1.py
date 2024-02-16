@@ -10,9 +10,9 @@ with open('rocket.txt', 'r', encoding='utf8') as file:
             ans[i[2]] = ans[i[2]] + 1
 
 with open('rocket_part.txt', 'w', newline='', encoding='utf8') as f:
-    f.write('rocketPart@countCode')
+    f.write('rocketPart@countCode\n')
     for i in ans:
-        f.write(f"{i}@{ans[i]}")
+        f.write(f"{i}@{ans[i]}\n")
 
 a = input()
 print(ans[a])
