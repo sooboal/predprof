@@ -19,7 +19,7 @@ with open('rocket.txt', 'r', encoding='utf8') as file:
     mas = list()
     for i in file:
         mas.append(i.strip().split('@'))
-    mas = sorted(mas, key=lambda x: x[0])
+    mas = sorted(mas, key=lambda x: x[0]) # сортируем по дате
     for i in range(len(mas)):
         mas[i].append(generate_number(i, mas[i][1], mas[i][2]))
 
